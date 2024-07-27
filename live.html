@@ -57,7 +57,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="ytbFrame1" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="ytbFrame1" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -72,7 +72,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="ytbFrame2" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="ytbFrame2" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -87,7 +87,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="ytbFrame3" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="ytbFrame3" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -102,7 +102,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="ytbFrame4" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="ytbFrame4" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -136,7 +136,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame1" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame1" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -151,7 +151,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame2" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame2" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -166,7 +166,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame3" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame3" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -181,7 +181,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame4" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame4" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -209,7 +209,8 @@
         document.getElementById('ytbForm1').addEventListener('submit', function(event) {
             event.preventDefault();
             const ytbUrl = document.getElementById('ytbUrl1').value;
-            document.getElementById('ytbFrame1').src = ytbUrl;
+            const embedUrl = ytbUrl.replace("watch?v=", "embed/");
+            document.getElementById('ytbFrame1').src = embedUrl;
         });
 
         document.getElementById('configureYTBBtn2').addEventListener('click', function() {
@@ -220,7 +221,8 @@
         document.getElementById('ytbForm2').addEventListener('submit', function(event) {
             event.preventDefault();
             const ytbUrl = document.getElementById('ytbUrl2').value;
-            document.getElementById('ytbFrame2').src = ytbUrl;
+            const embedUrl = ytbUrl.replace("watch?v=", "embed/");
+            document.getElementById('ytbFrame2').src = embedUrl;
         });
 
         document.getElementById('configureYTBBtn3').addEventListener('click', function() {
@@ -231,7 +233,8 @@
         document.getElementById('ytbForm3').addEventListener('submit', function(event) {
             event.preventDefault();
             const ytbUrl = document.getElementById('ytbUrl3').value;
-            document.getElementById('ytbFrame3').src = ytbUrl;
+            const embedUrl = ytbUrl.replace("watch?v=", "embed/");
+            document.getElementById('ytbFrame3').src = embedUrl;
         });
 
         document.getElementById('configureYTBBtn4').addEventListener('click', function() {
@@ -242,7 +245,8 @@
         document.getElementById('ytbForm4').addEventListener('submit', function(event) {
             event.preventDefault();
             const ytbUrl = document.getElementById('ytbUrl4').value;
-            document.getElementById('ytbFrame4').src = ytbUrl;
+            const embedUrl = ytbUrl.replace("watch?v=", "embed/");
+            document.getElementById('ytbFrame4').src = embedUrl;
         });
 
         document.getElementById('configureTwitchBtn1').addEventListener('click', function() {
@@ -253,7 +257,8 @@
         document.getElementById('twitchForm1').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl1').value;
-            document.getElementById('twitchFrame1').src = twitchUrl;
+            const channelName = twitchUrl.split("/").pop();
+            document.getElementById('twitchFrame1').src = `https://player.twitch.tv/?channel=${channelName}`;
         });
 
         document.getElementById('configureTwitchBtn2').addEventListener('click', function() {
@@ -264,7 +269,8 @@
         document.getElementById('twitchForm2').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl2').value;
-            document.getElementById('twitchFrame2').src = twitchUrl;
+            const channelName = twitchUrl.split("/").pop();
+            document.getElementById('twitchFrame2').src = `https://player.twitch.tv/?channel=${channelName}`;
         });
 
         document.getElementById('configureTwitchBtn3').addEventListener('click', function() {
@@ -275,7 +281,8 @@
         document.getElementById('twitchForm3').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl3').value;
-            document.getElementById('twitchFrame3').src = twitchUrl;
+            const channelName = twitchUrl.split("/").pop();
+            document.getElementById('twitchFrame3').src = `https://player.twitch.tv/?channel=${channelName}`;
         });
 
         document.getElementById('configureTwitchBtn4').addEventListener('click', function() {
@@ -286,7 +293,8 @@
         document.getElementById('twitchForm4').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl4').value;
-            document.getElementById('twitchFrame4').src = twitchUrl;
+            const channelName = twitchUrl.split("/").pop();
+            document.getElementById('twitchFrame4').src = `https://player.twitch.tv/?channel=${channelName}`;
         });
 
         document.querySelectorAll('.srt-feed button').forEach(button => {
