@@ -35,7 +35,7 @@
                 <li><a href="index.html" class="nav-link">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="events.html" class="nav-link">Events</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="SRTGen.html" class="nav-link">SRTGen</a></li>
                 <li><a href="live.html" class="nav-link">Live</a></li>
             </ul>
         </nav>
@@ -43,13 +43,13 @@
 
     <section class="p-12">
         <div class="container mx-auto">
-            <h2 class="text-4xl valorant-text-red font-bold mb-4">Live Streams</h2>
+            <h2 class="text-4xl valorant-text-red font-bold mb-8">Live Streams</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Embedded YouTube Videos -->
-                <div class="youtube-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 1</h3>
-                    <button id="configureYTBBtn1" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 1</button>
-                    <form id="ytbForm1" class="mt-4 hidden">
+                <div class="youtube-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on YouTube 1</h3>
+                    <button id="configureYTBBtn1" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure YTB Link 1</button>
+                    <form id="ytbForm1" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="ytbUrl1" class="block text-xl valorant-text-white mb-2">YouTube URL 1</label>
                             <input type="text" id="ytbUrl1" name="ytbUrl1" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 1">
@@ -61,10 +61,10 @@
                     </div>
                 </div>
 
-                <div class="youtube-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 2</h3>
-                    <button id="configureYTBBtn2" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 2</button>
-                    <form id="ytbForm2" class="mt-4 hidden">
+                <div class="youtube-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on YouTube 2</h3>
+                    <button id="configureYTBBtn2" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure YTB Link 2</button>
+                    <form id="ytbForm2" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="ytbUrl2" class="block text-xl valorant-text-white mb-2">YouTube URL 2</label>
                             <input type="text" id="ytbUrl2" name="ytbUrl2" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 2">
@@ -76,10 +76,10 @@
                     </div>
                 </div>
 
-                <div class="youtube-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 3</h3>
-                    <button id="configureYTBBtn3" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 3</button>
-                    <form id="ytbForm3" class="mt-4 hidden">
+                <div class="youtube-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on YouTube 3</h3>
+                    <button id="configureYTBBtn3" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure YTB Link 3</button>
+                    <form id="ytbForm3" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="ytbUrl3" class="block text-xl valorant-text-white mb-2">YouTube URL 3</label>
                             <input type="text" id="ytbUrl3" name="ytbUrl3" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 3">
@@ -91,10 +91,10 @@
                     </div>
                 </div>
 
-                <div class="youtube-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 4</h3>
-                    <button id="configureYTBBtn4" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 4</button>
-                    <form id="ytbForm4" class="mt-4 hidden">
+                <div class="youtube-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on YouTube 4</h3>
+                    <button id="configureYTBBtn4" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure YTB Link 4</button>
+                    <form id="ytbForm4" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="ytbUrl4" class="block text-xl valorant-text-white mb-2">YouTube URL 4</label>
                             <input type="text" id="ytbUrl4" name="ytbUrl4" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 4">
@@ -107,32 +107,28 @@
                 </div>
 
                 <!-- SRT Feed Players -->
-                <div class="srt-feed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">SRT Feed Monitor</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div class="bg-black p-6 shadow-lg rounded-lg">
-                            <p class="text-xl valorant-text-white mb-4">SRT Feed 1</p>
-                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
-                        </div>
-                        <div class="bg-black p-6 shadow-lg rounded-lg">
-                            <p class="text-xl valorant-text-white mb-4">SRT Feed 2</p>
-                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
-                        </div>
-                        <div class="bg-black p-6 shadow-lg rounded-lg">
-                            <p class="text-xl valorant-text-white mb-4">SRT Feed 3</p>
-                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
-                        </div>
-                        <div class="bg-black p-6 shadow-lg rounded-lg">
-                            <p class="text-xl valorant-text-white mb-4">SRT Feed 4</p>
-                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
-                        </div>
-                    </div>
+                <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 1</h3>
+                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
                 </div>
+                <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 2</h3>
+                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                </div>
+                <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 3</h3>
+                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                </div>
+                <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 4</h3>
+                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                </div>
+
                 <!-- Embedded Twitch Streams -->
-                <div class="twitch-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 1</h3>
-                    <button id="configureTwitchBtn1" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 1</button>
-                    <form id="twitchForm1" class="mt-4 hidden">
+                <div class="twitch-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on Twitch 1</h3>
+                    <button id="configureTwitchBtn1" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure Twitch Link 1</button>
+                    <form id="twitchForm1" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="twitchUrl1" class="block text-xl valorant-text-white mb-2">Twitch URL 1</label>
                             <input type="text" id="twitchUrl1" name="twitchUrl1" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 1">
@@ -144,10 +140,10 @@
                     </div>
                 </div>
 
-                <div class="twitch-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 2</h3>
-                    <button id="configureTwitchBtn2" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 2</button>
-                    <form id="twitchForm2" class="mt-4 hidden">
+                <div class="twitch-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on Twitch 2</h3>
+                    <button id="configureTwitchBtn2" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure Twitch Link 2</button>
+                    <form id="twitchForm2" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="twitchUrl2" class="block text-xl valorant-text-white mb-2">Twitch URL 2</label>
                             <input type="text" id="twitchUrl2" name="twitchUrl2" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 2">
@@ -159,10 +155,10 @@
                     </div>
                 </div>
 
-                <div class="twitch-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 3</h3>
-                    <button id="configureTwitchBtn3" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 3</button>
-                    <form id="twitchForm3" class="mt-4 hidden">
+                <div class="twitch-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on Twitch 3</h3>
+                    <button id="configureTwitchBtn3" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure Twitch Link 3</button>
+                    <form id="twitchForm3" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="twitchUrl3" class="block text-xl valorant-text-white mb-2">Twitch URL 3</label>
                             <input type="text" id="twitchUrl3" name="twitchUrl3" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 3">
@@ -174,10 +170,10 @@
                     </div>
                 </div>
 
-                <div class="twitch-embed">
-                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 4</h3>
-                    <button id="configureTwitchBtn4" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 4</button>
-                    <form id="twitchForm4" class="mt-4 hidden">
+                <div class="twitch-embed bg-black p-6 shadow-lg rounded-lg">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-4">Watch Live on Twitch 4</h3>
+                    <button id="configureTwitchBtn4" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure Twitch Link 4</button>
+                    <form id="twitchForm4" class="hidden mb-4">
                         <div class="mb-4">
                             <label for="twitchUrl4" class="block text-xl valorant-text-white mb-2">Twitch URL 4</label>
                             <input type="text" id="twitchUrl4" name="twitchUrl4" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 4">

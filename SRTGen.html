@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRT Generator - JJINVADE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .valorant-bg {
+            background-color: #0F1923; /* Dark Valorant background */
+        }
+        .valorant-text-red {
+            color: #FF4655; /* Valorant red */
+        }
+        .valorant-text-white {
+            color: #FFFFFF; /* White */
+        }
+        .valorant-text-gray {
+            color: #B0B0B0; /* Light gray */
+        }
+        .nav-link {
+            color: #FF4655; /* Valorant red */
+        }
+        .btn-valorant {
+            background-color: #FF4655;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="valorant-bg text-white">
+    <header class="p-6 flex justify-between items-center bg-black shadow-lg">
+        <h1 class="text-3xl valorant-text-red font-bold">JJINVADE</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="SRTGen.html" class="nav-link">SRTGen</a></li>
+                <li><a href="live.html" class="nav-link">Live</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="p-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl valorant-text-red font-bold mb-4">SRT Link Generator</h2>
+            <form id="srtForm" class="mt-4">
+                <div class="mb-4">
+                    <label for="srtIp" class="block text-xl valorant-text-white mb-2">SRT IP Address</label>
+                    <input type="text" id="srtIp" name="srtIp" class="w-full p-2 text-black rounded" placeholder="Enter IP Address">
+                </div>
+                <div class="mb-4">
+                    <label for="srtPort" class="block text-xl valorant-text-white mb-2">SRT Port</label>
+                    <input type="text" id="srtPort" name="srtPort" class="w-full p-2 text-black rounded" placeholder="Enter Port">
+                </div>
+                <div class="mb-4">
+                    <label for="srtStreamId" class="block text-xl valorant-text-white mb-2">Stream ID</label>
+                    <input type="text" id="srtStreamId" name="srtStreamId" class="w-full p-2 text-black rounded" placeholder="Enter Stream ID">
+                </div>
+                <div class="mb-4">
+                    <label for="srtLatency" class="block text-xl valorant-text-white mb-2">Latency (ms)</label>
+                    <input type="text" id="srtLatency" name="srtLatency" class="w-full p-2 text-black rounded" placeholder="Enter Latency">
+                </div>
+                <div class="mb-4">
+                    <label for="srtPassphrase" class="block text-xl valorant-text-white mb-2">Passphrase</label>
+                    <input type="text" id="srtPassphrase" name="srtPassphrase" class="w-full p-2 text-black rounded" placeholder="Enter Passphrase">
+                </div>
+                <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Generate SRT Link</button>
+            </form>
+            <div id="srtLinkContainer" class="mt-4 hidden">
+                <h3 class="text-2xl valorant-text-red font-bold mb-2">Generated SRT Link</h3>
+                <p id="srtLink" class="text-xl valorant-text-white break-all"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-6 bg-black">
+        <div class="container mx-auto text-center">
+            <p class="valorant-text-red mb-4">Follow us on social media</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="valorant-text-white">Facebook</a>
+                <a href="#" class="valorant-text-red">Twitter</a>
+                <a href="#" class="valorant-text-white">Instagram</a>
+            </div>
+            <p class="valorant-text-white">&copy; 2024 JJINVADE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('srtForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const ip = document.getElementById('srtIp').value;
+            const port = document.getElementById('srtPort').value;
+            const streamId = document.getElementById('srtStreamId').value;
+            const latency = document.getElementById('srtLatency').value;
+            const passphrase = document.getElementById('srtPassphrase').value;
+            const srtLink = `srt://${ip}:${port}?streamid=${streamId}&latency=${latency}&passphrase=${passphrase}`;
+            document.getElementById('srtLink').textContent = srtLink;
+            document.getElementById('srtLinkContainer').classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
