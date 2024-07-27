@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live - JJINVADE</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .valorant-bg {
+            background-color: #0F1923; /* Dark Valorant background */
+        }
+        .valorant-text-red {
+            color: #FF4655; /* Valorant red */
+        }
+        .valorant-text-white {
+            color: #FFFFFF; /* White */
+        }
+        .valorant-text-gray {
+            color: #B0B0B0; /* Light gray */
+        }
+        .nav-link {
+            color: #FF4655; /* Valorant red */
+        }
+        .btn-valorant {
+            background-color: #FF4655;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="valorant-bg text-white">
+    <header class="p-6 flex justify-between items-center bg-black shadow-lg">
+        <h1 class="text-3xl valorant-text-red font-bold">JJINVADE</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="events.html" class="nav-link">Events</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="live.html" class="nav-link">Live</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="p-12">
+        <div class="container mx-auto">
+            <h2 class="text-4xl valorant-text-red font-bold mb-4">Live Streams</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Embedded YouTube Videos -->
+                <div class="youtube-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 1</h3>
+                    <button id="configureYTBBtn1" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 1</button>
+                    <form id="ytbForm1" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="ytbUrl1" class="block text-xl valorant-text-white mb-2">YouTube URL 1</label>
+                            <input type="text" id="ytbUrl1" name="ytbUrl1" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 1">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="ytbFrame1" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="youtube-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 2</h3>
+                    <button id="configureYTBBtn2" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 2</button>
+                    <form id="ytbForm2" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="ytbUrl2" class="block text-xl valorant-text-white mb-2">YouTube URL 2</label>
+                            <input type="text" id="ytbUrl2" name="ytbUrl2" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 2">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="ytbFrame2" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="youtube-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 3</h3>
+                    <button id="configureYTBBtn3" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 3</button>
+                    <form id="ytbForm3" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="ytbUrl3" class="block text-xl valorant-text-white mb-2">YouTube URL 3</label>
+                            <input type="text" id="ytbUrl3" name="ytbUrl3" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 3">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="ytbFrame3" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="youtube-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on YouTube 4</h3>
+                    <button id="configureYTBBtn4" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure YTB Link 4</button>
+                    <form id="ytbForm4" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="ytbUrl4" class="block text-xl valorant-text-white mb-2">YouTube URL 4</label>
+                            <input type="text" id="ytbUrl4" name="ytbUrl4" class="w-full p-2 text-black rounded" placeholder="Enter YouTube URL 4">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="ytbFrame4" class="w-full h-full" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- SRT Feed Players -->
+                <div class="srt-feed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">SRT Feed Monitor</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-black p-6 shadow-lg rounded-lg">
+                            <p class="text-xl valorant-text-white mb-4">SRT Feed 1</p>
+                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                        </div>
+                        <div class="bg-black p-6 shadow-lg rounded-lg">
+                            <p class="text-xl valorant-text-white mb-4">SRT Feed 2</p>
+                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                        </div>
+                        <div class="bg-black p-6 shadow-lg rounded-lg">
+                            <p class="text-xl valorant-text-white mb-4">SRT Feed 3</p>
+                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                        </div>
+                        <div class="bg-black p-6 shadow-lg rounded-lg">
+                            <p class="text-xl valorant-text-white mb-4">SRT Feed 4</p>
+                            <button class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Embedded Twitch Streams -->
+                <div class="twitch-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 1</h3>
+                    <button id="configureTwitchBtn1" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 1</button>
+                    <form id="twitchForm1" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="twitchUrl1" class="block text-xl valorant-text-white mb-2">Twitch URL 1</label>
+                            <input type="text" id="twitchUrl1" name="twitchUrl1" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 1">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="twitchFrame1" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="twitch-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 2</h3>
+                    <button id="configureTwitchBtn2" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 2</button>
+                    <form id="twitchForm2" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="twitchUrl2" class="block text-xl valorant-text-white mb-2">Twitch URL 2</label>
+                            <input type="text" id="twitchUrl2" name="twitchUrl2" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 2">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="twitchFrame2" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="twitch-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 3</h3>
+                    <button id="configureTwitchBtn3" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 3</button>
+                    <form id="twitchForm3" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="twitchUrl3" class="block text-xl valorant-text-white mb-2">Twitch URL 3</label>
+                            <input type="text" id="twitchUrl3" name="twitchUrl3" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 3">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="twitchFrame3" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="twitch-embed">
+                    <h3 class="text-2xl valorant-text-red font-bold mb-2">Watch Live on Twitch 4</h3>
+                    <button id="configureTwitchBtn4" class="mt-4 px-4 py-2 btn-valorant font-bold rounded">Configure Twitch Link 4</button>
+                    <form id="twitchForm4" class="mt-4 hidden">
+                        <div class="mb-4">
+                            <label for="twitchUrl4" class="block text-xl valorant-text-white mb-2">Twitch URL 4</label>
+                            <input type="text" id="twitchUrl4" name="twitchUrl4" class="w-full p-2 text-black rounded" placeholder="Enter Twitch URL 4">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="twitchFrame4" class="w-full h-full" src="https://player.twitch.tv/?channel=twitch" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="p-6 bg-black">
+        <div class="container mx-auto text-center">
+            <p class="valorant-text-red mb-4">Follow us on social media</p>
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="valorant-text-white">Facebook</a>
+                <a href="#" class="valorant-text-red">Twitter</a>
+                <a href="#" class="valorant-text-white">Instagram</a>
+            </div>
+            <p class="valorant-text-white">&copy; 2024 JJINVADE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('configureYTBBtn1').addEventListener('click', function() {
+            const form = document.getElementById('ytbForm1');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('ytbForm1').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const ytbUrl = document.getElementById('ytbUrl1').value;
+            document.getElementById('ytbFrame1').src = ytbUrl;
+        });
+
+        document.getElementById('configureYTBBtn2').addEventListener('click', function() {
+            const form = document.getElementById('ytbForm2');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('ytbForm2').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const ytbUrl = document.getElementById('ytbUrl2').value;
+            document.getElementById('ytbFrame2').src = ytbUrl;
+        });
+
+        document.getElementById('configureYTBBtn3').addEventListener('click', function() {
+            const form = document.getElementById('ytbForm3');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('ytbForm3').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const ytbUrl = document.getElementById('ytbUrl3').value;
+            document.getElementById('ytbFrame3').src = ytbUrl;
+        });
+
+        document.getElementById('configureYTBBtn4').addEventListener('click', function() {
+            const form = document.getElementById('ytbForm4');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('ytbForm4').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const ytbUrl = document.getElementById('ytbUrl4').value;
+            document.getElementById('ytbFrame4').src = ytbUrl;
+        });
+
+        document.getElementById('configureTwitchBtn1').addEventListener('click', function() {
+            const form = document.getElementById('twitchForm1');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('twitchForm1').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const twitchUrl = document.getElementById('twitchUrl1').value;
+            document.getElementById('twitchFrame1').src = twitchUrl;
+        });
+
+        document.getElementById('configureTwitchBtn2').addEventListener('click', function() {
+            const form = document.getElementById('twitchForm2');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('twitchForm2').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const twitchUrl = document.getElementById('twitchUrl2').value;
+            document.getElementById('twitchFrame2').src = twitchUrl;
+        });
+
+        document.getElementById('configureTwitchBtn3').addEventListener('click', function() {
+            const form = document.getElementById('twitchForm3');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('twitchForm3').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const twitchUrl = document.getElementById('twitchUrl3').value;
+            document.getElementById('twitchFrame3').src = twitchUrl;
+        });
+
+        document.getElementById('configureTwitchBtn4').addEventListener('click', function() {
+            const form = document.getElementById('twitchForm4');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('twitchForm4').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const twitchUrl = document.getElementById('twitchUrl4').value;
+            document.getElementById('twitchFrame4').src = twitchUrl;
+        });
+
+        document.querySelectorAll('.srt-feed button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('SRT configuration functionality to be implemented.');
+            });
+        });
+    </script>
+</body>
+</html>
