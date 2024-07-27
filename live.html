@@ -118,7 +118,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="srtFrame1" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                        <video id="srtFrame1" class="w-full h-full" controls></video>
                     </div>
                 </div>
 
@@ -133,7 +133,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="srtFrame2" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                        <video id="srtFrame2" class="w-full h-full" controls></video>
                     </div>
                 </div>
 
@@ -148,7 +148,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="srtFrame3" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                        <video id="srtFrame3" class="w-full h-full" controls></video>
                     </div>
                 </div>
 
@@ -163,7 +163,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="srtFrame4" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                        <video id="srtFrame4" class="w-full h-full" controls></video>
                     </div>
                 </div>
 
@@ -301,7 +301,7 @@
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl1').value;
             const channelName = new URL(twitchUrl).pathname.split('/').pop();
-            document.getElementById('twitchFrame1').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
+            document.getElementById('twitchFrame1').src = `https://player.twitch.tv/?channel=${channelName}&parent=localhost`;
         });
 
         document.getElementById('configureTwitchBtn2').addEventListener('click', function() {
@@ -313,7 +313,7 @@
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl2').value;
             const channelName = new URL(twitchUrl).pathname.split('/').pop();
-            document.getElementById('twitchFrame2').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
+            document.getElementById('twitchFrame2').src = `https://player.twitch.tv/?channel=${channelName}&parent=localhost`;
         });
 
         document.getElementById('configureTwitchBtn3').addEventListener('click', function() {
@@ -325,7 +325,7 @@
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl3').value;
             const channelName = new URL(twitchUrl).pathname.split('/').pop();
-            document.getElementById('twitchFrame3').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
+            document.getElementById('twitchFrame3').src = `https://player.twitch.tv/?channel=${channelName}&parent=localhost`;
         });
 
         document.getElementById('configureTwitchBtn4').addEventListener('click', function() {
@@ -337,7 +337,7 @@
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl4').value;
             const channelName = new URL(twitchUrl).pathname.split('/').pop();
-            document.getElementById('twitchFrame4').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
+            document.getElementById('twitchFrame4').src = `https://player.twitch.tv/?channel=${channelName}&parent=localhost`;
         });
 
         document.getElementById('configureSRTBtn1').addEventListener('click', function() {
