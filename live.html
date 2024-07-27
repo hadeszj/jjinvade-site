@@ -109,19 +109,62 @@
                 <!-- SRT Feed Players -->
                 <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
                     <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 1</h3>
-                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                    <button id="configureSRTBtn1" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure SRT 1</button>
+                    <form id="srtForm1" class="hidden mb-4">
+                        <div class="mb-4">
+                            <label for="srtUrl1" class="block text-xl valorant-text-white mb-2">SRT URL 1</label>
+                            <input type="text" id="srtUrl1" name="srtUrl1" class="w-full p-2 text-black rounded" placeholder="Enter SRT URL 1">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="srtFrame1" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
+
                 <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
                     <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 2</h3>
-                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                    <button id="configureSRTBtn2" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure SRT 2</button>
+                    <form id="srtForm2" class="hidden mb-4">
+                        <div class="mb-4">
+                            <label for="srtUrl2" class="block text-xl valorant-text-white mb-2">SRT URL 2</label>
+                            <input type="text" id="srtUrl2" name="srtUrl2" class="w-full p-2 text-black rounded" placeholder="Enter SRT URL 2">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="srtFrame2" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
+
                 <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
                     <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 3</h3>
-                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                    <button id="configureSRTBtn3" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure SRT 3</button>
+                    <form id="srtForm3" class="hidden mb-4">
+                        <div class="mb-4">
+                            <label for="srtUrl3" class="block text-xl valorant-text-white mb-2">SRT URL 3</label>
+                            <input type="text" id="srtUrl3" name="srtUrl3" class="w-full p-2 text-black rounded" placeholder="Enter SRT URL 3">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="srtFrame3" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
+
                 <div class="srt-feed bg-black p-6 shadow-lg rounded-lg">
                     <h3 class="text-2xl valorant-text-red font-bold mb-4">SRT Feed Monitor 4</h3>
-                    <button class="px-4 py-2 btn-valorant font-bold rounded">Configure SRT</button>
+                    <button id="configureSRTBtn4" class="px-4 py-2 btn-valorant font-bold rounded mb-4">Configure SRT 4</button>
+                    <form id="srtForm4" class="hidden mb-4">
+                        <div class="mb-4">
+                            <label for="srtUrl4" class="block text-xl valorant-text-white mb-2">SRT URL 4</label>
+                            <input type="text" id="srtUrl4" name="srtUrl4" class="w-full p-2 text-black rounded" placeholder="Enter SRT URL 4">
+                        </div>
+                        <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
+                    </form>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe id="srtFrame4" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
 
                 <!-- Embedded Twitch Streams -->
@@ -136,7 +179,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame1" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame1" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -151,7 +194,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame2" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame2" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -166,7 +209,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame3" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame3" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
 
@@ -181,7 +224,7 @@
                         <button type="submit" class="px-4 py-2 btn-valorant font-bold rounded">Save</button>
                     </form>
                     <div class="aspect-w-16 aspect-h-9">
-                        <iframe id="twitchFrame4" class="w-full h-full" src="https://player.twitch.tv/?channel=" frameborder="0" allowfullscreen></iframe>
+                        <iframe id="twitchFrame4" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -257,8 +300,8 @@
         document.getElementById('twitchForm1').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl1').value;
-            const channelName = twitchUrl.split("/").pop();
-            document.getElementById('twitchFrame1').src = `https://player.twitch.tv/?channel=${channelName}`;
+            const channelName = new URL(twitchUrl).pathname.split('/').pop();
+            document.getElementById('twitchFrame1').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
         });
 
         document.getElementById('configureTwitchBtn2').addEventListener('click', function() {
@@ -269,8 +312,8 @@
         document.getElementById('twitchForm2').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl2').value;
-            const channelName = twitchUrl.split("/").pop();
-            document.getElementById('twitchFrame2').src = `https://player.twitch.tv/?channel=${channelName}`;
+            const channelName = new URL(twitchUrl).pathname.split('/').pop();
+            document.getElementById('twitchFrame2').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
         });
 
         document.getElementById('configureTwitchBtn3').addEventListener('click', function() {
@@ -281,8 +324,8 @@
         document.getElementById('twitchForm3').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl3').value;
-            const channelName = twitchUrl.split("/").pop();
-            document.getElementById('twitchFrame3').src = `https://player.twitch.tv/?channel=${channelName}`;
+            const channelName = new URL(twitchUrl).pathname.split('/').pop();
+            document.getElementById('twitchFrame3').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
         });
 
         document.getElementById('configureTwitchBtn4').addEventListener('click', function() {
@@ -293,14 +336,52 @@
         document.getElementById('twitchForm4').addEventListener('submit', function(event) {
             event.preventDefault();
             const twitchUrl = document.getElementById('twitchUrl4').value;
-            const channelName = twitchUrl.split("/").pop();
-            document.getElementById('twitchFrame4').src = `https://player.twitch.tv/?channel=${channelName}`;
+            const channelName = new URL(twitchUrl).pathname.split('/').pop();
+            document.getElementById('twitchFrame4').src = `https://player.twitch.tv/?channel=${channelName}&parent=example.com`;
         });
 
-        document.querySelectorAll('.srt-feed button').forEach(button => {
-            button.addEventListener('click', function() {
-                alert('SRT configuration functionality to be implemented.');
-            });
+        document.getElementById('configureSRTBtn1').addEventListener('click', function() {
+            const form = document.getElementById('srtForm1');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('srtForm1').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const srtUrl = document.getElementById('srtUrl1').value;
+            document.getElementById('srtFrame1').src = srtUrl;
+        });
+
+        document.getElementById('configureSRTBtn2').addEventListener('click', function() {
+            const form = document.getElementById('srtForm2');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('srtForm2').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const srtUrl = document.getElementById('srtUrl2').value;
+            document.getElementById('srtFrame2').src = srtUrl;
+        });
+
+        document.getElementById('configureSRTBtn3').addEventListener('click', function() {
+            const form = document.getElementById('srtForm3');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('srtForm3').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const srtUrl = document.getElementById('srtUrl3').value;
+            document.getElementById('srtFrame3').src = srtUrl;
+        });
+
+        document.getElementById('configureSRTBtn4').addEventListener('click', function() {
+            const form = document.getElementById('srtForm4');
+            form.classList.toggle('hidden');
+        });
+
+        document.getElementById('srtForm4').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const srtUrl = document.getElementById('srtUrl4').value;
+            document.getElementById('srtFrame4').src = srtUrl;
         });
     </script>
 </body>
